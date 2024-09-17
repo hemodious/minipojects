@@ -1,3 +1,4 @@
+<!--app to track an evaluate an intern's performance-->
 <!DOCTYPE html>
 <html >
   <head>
@@ -14,24 +15,30 @@
   <div id="body">
       <div id="back">
          <form>
-            <h2>DAILY REVIEW</h2>
-                 <DIV class="SEP">
-                  <p><b> How did your day go?</b></p><p class="counter"></p>
-                    </DIV>
-                <textarea id="inputbox" type="text" ></textarea>  
-                 <DIV class="SEP"><p><b>Task performed </i>
-                       </b></p> <p class="counter"></p>
-                </DIV>
-                      <input class="taskbox" type="text">  
-                <div class="SEP"><p><B>Task performed </B>
-                </p> <p class="counter"></p>
-                  </div> 
-                  <input class="taskbox" type="text" ><br><br>
+            <h2>DAILY REVIEW</h2><!--heading -->
 
-                  <DIV class="dropdown">
-                    <div class="space1">
-                <label for="time" class="taskbox1"><b>Hours spent on task </b></label><br>
-                 <select id="time" name="time">
+            <DIV class="SEP"><!--container to help separate the input field from the counter-->
+                  <p><b> How did your day go?</b></p>
+                  <p class="counter"></p><!--counter-->
+                    </DIV>
+                <textarea id="inputbox" type="text" ></textarea>  <!--input field for the question asked -->
+
+            <DIV class="SEP"><!--same-->
+                  <p><b>Task performed </b></p><!--question to user-->
+                   <p class="counter"></p><!--counter-->
+             </DIV>
+                      <input class="taskbox" type="text">  <!--input feild for the question asked-->
+
+              <div class="SEP">
+                    <p><B>Task performed </B><!--question to user-->
+                     </p> <p class="counter"></p><!--counter-->
+               </div> 
+                  <input class="taskbox" type="text" ><br><br><!--input field for question-->
+
+              
+                
+                <label for="time" class="taskbox1"><b>Hours spent on task </b></label><br><!--question to user-->
+                 <select id="time" name="time"><!--list of options for user to select-->
                   <option>0</option>
                   <option>1</option>
                   <option>2</option>
@@ -42,16 +49,16 @@
                   <option>7</option>
                   <option>8</option>
                  </select>
-                 </div>
+                
               
-                 <div class="space2">
-                  <label><b>Date</b></label><br>
-                  <input type="date" id="size" class="date">
+                 <div class="space2"><!--container to make spacing around the labels and input fileds easy-->
+                  <label><b>Date</b></label><br><!--instruction to user to user-->
+                  <input type="date" id="size" class="date"><!--field for user to choose date he worked on the project-->
                 </div>
-              </DIV>
+              
               
                  <br><br>
-                 <button id="SUBMIT"><i class="fa fa-plus" aria-hidden="true"></i> Create Contact   
+                 <button id="SUBMIT"><i class="fa fa-plus" aria-hidden="true"></i> Create Contact   <!--submit button-->
                </button> 
 
            </form>
