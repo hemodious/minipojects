@@ -1,0 +1,133 @@
+#body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  border:none ;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-family:"Nunito", sans-serif;
+}
+p{
+    padding-top: 5px;
+    font-family:"Nunito", sans-serif;
+}
+#back{
+    width: 900px;
+    border: 4x  solid  black;
+    height: 100vhpx;
+    padding-top: 0%;
+  margin-top: 0%;
+  justify-content: center;
+   display: flex;
+   border-radius: 15px;
+  background-color: white;
+  border: none;
+  padding-bottom: 20px;
+}
+.SEP{
+    display: flex;
+    justify-content: space-between;
+}
+#inputbox{
+    border:none;
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    padding-top: 0%;
+    padding-left: 0.5%;
+    background-color:whitesmoke;
+    border-width: 1px;
+}
+.taskbox{
+    width: 500px;
+    height: 100PX;
+    border:none;
+    border-radius: 8px;
+    border-width: 1px;
+    background-color: whitesmoke;
+    text-align: left;
+    font-size: 15px;
+}
+
+.drop{
+    
+    font-size: 15px;
+    background-color:  rgb(252, 247, 247);
+    border-radius: 5px;
+    width: 500px;
+    height: 30px;
+    border: none;
+    text-align: left;
+    border-width: 1px;
+}
+.counter{
+    color: rgb(184, 11, 146);
+}
+#SUBMIT{
+    font-size: 16px;
+    position: relative;
+    left: 140px;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #206ebd  51%, #1FA2FF  100%);
+
+    border-width: 0.5px;
+    width: 250px;
+    height: 45px;
+    text-decoration:solid ;
+    color: white;
+    box-shadow: 1px 2px 12px 2px grey;
+    
+}
+#SUBMIT i{
+padding-right: 10px;
+}
+.taskbox1{
+   
+    background-color: transparent;
+    border:none;
+    text-align: left;
+    
+}
+
+
+.dropdown:hover .drpmenu{
+display: block;
+
+}
+#time{
+    width:190px;
+    border: none;
+    background-color: whitesmoke;
+    text-align: center;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 10px;
+    
+}
+.date{
+    width: 290px;
+    height:35px;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 20px;
+    
+    
+}
+.space2 label{
+    margin-left: 23px;
+}
+.space{
+    margin-top: 10px;
+   
+
+}
+
