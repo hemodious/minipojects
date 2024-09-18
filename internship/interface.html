@@ -10,35 +10,38 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+
   </head>
  <body >
+  <script src="script.js"></script>
+
   <div id="body">
       <div id="back">
-         <form>
+         <form action="/" method="get"> 
             <h2>DAILY REVIEW</h2><!--heading -->
 
             <DIV class="SEP"><!--container to help separate the input field from the counter-->
                   <p><b> How did your day go?</b></p>
                   <p class="counter"></p><!--counter-->
                     </DIV>
-                <textarea id="inputbox" type="text" ></textarea>  <!--input field for the question asked -->
+                <textarea id="day" name="day"  type="text" required></textarea>  <!--input field for the question asked -->
 
             <DIV class="SEP"><!--same-->
                   <p><b>Task performed </b></p><!--question to user-->
                    <p class="counter"></p><!--counter-->
              </DIV>
-                      <input class="taskbox" type="text">  <!--input feild for the question asked-->
+                      <input class="taskbox" id="task" name="task" type="text" required>  <!--input feild for the question asked-->
 
               <div class="SEP">
                     <p><B>Task performed </B><!--question to user-->
                      </p> <p class="counter"></p><!--counter-->
                </div> 
-                  <input class="taskbox" type="text" ><br><br><!--input field for question-->
+                  <input class="taskbox" type="text"  required><br><br><!--input field for question-->
 
               
                 
                 <label for="time" class="taskbox1"><b>Hours spent on task </b></label><br><!--question to user-->
-                 <select id="time" name="time"><!--list of options for user to select-->
+                 <select id="time" name="time" required><!--list of options for user to select-->
                   <option>0</option>
                   <option>1</option>
                   <option>2</option>
