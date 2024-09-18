@@ -10,6 +10,9 @@
     padding-bottom: 0%;
     font-family:"Nunito", sans-serif;
 }
+textarea{
+    resize: none;
+}
 p{
     padding-top: 5px;
     font-family:"Nunito", sans-serif;
@@ -110,7 +113,7 @@ display: block;
     
 }
 .date{
-    width: 290px;
+    width: 190px;
     height:35px;
     border: none;
     background-color: whitesmoke;
