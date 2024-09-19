@@ -1,40 +1,58 @@
+body{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    font-family:"Nunito", sans-serif;
+
+}
 #body{
     display:flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    
+   background-color: transparent;
   border:none ;
     margin-top: 0px;
     margin-bottom: 0%;
     padding-bottom: 0%;
     font-family:"Nunito", sans-serif;
+    margin-left: 0;
+}
+textarea{
+    resize: none;
 }
 p{
     padding-top: 5px;
     font-family:"Nunito", sans-serif;
 }
+
 #back{
-    width: 900px;
+    width: 600px;
     border: 4x  solid  black;
-    height: 100vhpx;
-    padding-top: 0%;
-  margin-top: 0%;
+    height: 400px;
+    padding-right:0;
+  margin-left: 0;
   justify-content: center;
    display: flex;
    border-radius: 15px;
   background-color: white;
   border: none;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  position: relative;
+  left:10px;
+  top: -140px;
+}
+textarea{
+    resize: none;
 }
 .SEP{
     display: flex;
     justify-content: space-between;
+    padding-left: 8px;
+    font-size: 14px;
 }
-#inputbox{
+#day{
     border:none;
     width: 500px;
-    height: 150px;
+    height: 100px;
     border-radius: 10px;
     padding-top: 0%;
     padding-left: 0.5%;
@@ -43,7 +61,7 @@ p{
 }
 .taskbox{
     width: 500px;
-    height: 100PX;
+    height: 30PX;
     border:none;
     border-radius: 8px;
     border-width: 1px;
@@ -65,6 +83,7 @@ p{
 }
 .counter{
     color: rgb(184, 11, 146);
+    font-size: 12px;
 }
 #SUBMIT{
     font-size: 16px;
@@ -99,7 +118,7 @@ display: block;
 
 }
 #time{
-    width:190px;
+    width:240px;
     border: none;
     background-color: whitesmoke;
     text-align: center;
@@ -110,7 +129,7 @@ display: block;
     
 }
 .date{
-    width: 290px;
+    width: 240px;
     height:35px;
     border: none;
     background-color: whitesmoke;
@@ -131,3 +150,122 @@ display: block;
 
 }
 
+a{
+text-decoration: none;
+color: black;
+padding-right: 0;
+padding-left: 20px;
+font-weight: bold;
+position: relative;
+width: max-content;
+
+}
+nav{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: left;
+    padding-top: 8px;
+    background-image: linear-gradient();
+    padding-bottom:0px;
+  
+    
+
+
+}
+.bar{
+    width:100%;
+    background-color: white;
+    height: 40px;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    position: relative;
+    top: -7px;
+    left: -7px;
+
+}
+.SEP i{
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 2px 2px 2px 2px;
+    font-weight: bold;
+}
+
+
+
+a::after{
+    content: "";
+    background-color: #1FA2FF;
+    height: 4px;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+    left:10px;
+
+
+}
+a:hover::after{
+    transform: scale(1);
+}
+
+#supervisor{
+    margin-top: 30px;
+    border:none;
+    width: 490px;
+    height: 150px;
+    border-radius: 10px;
+    padding-top: 0%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color:whitesmoke;
+    border-width: 1px;
+    
+}
+.as{
+display:block;
+
+}
+i{
+    padding-left: 10PX;
+}
+.case{
+    border-radius: 4px;
+    border: 0.2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#back2{
+    width: 510px;
+    border: 4x  solid  black;
+    height: 850px;
+    padding-right:0;
+  margin-left: 0;
+  justify-content: center;
+   display: flex;
+   border-radius: 0px;
+  background-color: white;
+  box-shadow: 0.1px 0.1px 0.2px 1px rgb(238, 237, 237);
+  padding-bottom: 20px;
+  position: relative;
+  right:-112px;
+  top: -110px;
+}
+.SEPA{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.1px 0.1px 0.2px 0.5px rgb(238, 237, 237);
+    width: 510px;
+}
+#tup{
+    background-color: blue;
+    width: max-content;
+}

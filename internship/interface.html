@@ -1,3 +1,4 @@
+<!--app to track and evaluate an intern's performance-->
 <!DOCTYPE html>
 <html >
   <head>
@@ -9,29 +10,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+
   </head>
  <body >
-  <div id="body">
-      <div id="back">
-         <form>
-            <h2>DAILY REVIEW</h2>
-                 <DIV class="SEP">
-                  <p><b> How did your day go?</b></p><p class="counter"></p>
-                    </DIV>
-                <textarea id="inputbox" type="text" ></textarea>  
-                 <DIV class="SEP"><p><b>Task performed </i>
-                       </b></p> <p class="counter"></p>
-                </DIV>
-                      <input class="taskbox" type="text">  
-                <div class="SEP"><p><B>Task performed </B>
-                </p> <p class="counter"></p>
-                  </div> 
-                  <input class="taskbox" type="text" ><br><br>
 
-                  <DIV class="dropdown">
-                    <div class="space1">
-                <label for="time" class="taskbox1"><b>Hours spent on task </b></label><br>
-                 <select id="time" name="time">
+
+  <nav class="bar"><h4>DAILY REVIEW</h4></nav>
+  <nav >
+    <a href="#">supervisor</a>
+    <a href="#">results</a>
+    
+  </nav>
+   <div id="body">
+n
+      <div id="back">
+         <form action="" method="get"> 
+            <!--heading -->
+
+            <DIV class="SEP"><!--container to help separate the input field from the counter-->
+                  <p><b> How did your day go?</b></p>
+                  <p class="counter">22/500</p><!--counter-->
+                    </DIV>
+                <textarea id="day" name="day"  type="text" required></textarea>  <!--input field for the question asked -->
+
+            <DIV class="SEP"><!--same-->
+                  <p><b>Task performed </b></p><!--question to user-->
+                   <p class="counter">0/100</p><!--counter-->
+             </DIV>
+                      <input class="taskbox" id="task" name="task" type="text" required>  <!--input feild for the question asked-->
+
+              <div class="SEP">
+                    <p><B>Task performed </B><!--question to user-->
+                     </p> <p class="counter">12/50</p><!--counter-->
+               </div> 
+                  <input class="taskbox" type="text"  required><br><br><!--input field for question-->
+
+              
+                <div class="SEP">
+                  <div >
+                <label for="time" class="taskbox1"><b>Hours spent on task </b></label><br><!--question to user-->
+                 <select id="time" name="time" required><!--list of options for user to select-->
                   <option>0</option>
                   <option>1</option>
                   <option>2</option>
@@ -42,18 +60,66 @@
                   <option>7</option>
                   <option>8</option>
                  </select>
-                 </div>
-              
-                 <div class="space2">
-                  <label><b>Date</b></label><br>
-                  <input type="date" id="size" class="date">
                 </div>
-              </DIV>
+              
+                 <div class="space2"><!--container to make spacing around the labels and input fileds easy-->
+                  <label><b>Date</b></label><br><!--instruction to user to user-->
+                  <input type="date" id="size" class="date" required><!--field for user to choose date he worked on the project-->
+                </div>
+
+              </div>
+              
               
                  <br><br>
-                 <button id="SUBMIT"><i class="fa fa-plus" aria-hidden="true"></i> Create Contact   
+                 <button id="SUBMIT"><i class="fa fa-plus" aria-hidden="true"></i> Create Contact   <!--submit button-->
                </button> 
 
            </form>
+           
+          </div>
+          
+          <div id="back2">
+            <FORm>
+              <Div class="SEPA">
+                
+            <nav>
+              <a href="">supervisor</a>
+              <a href="">results</a>
+            </nav>
+            <p class="counter"> clear</p><!--counter-->
+            </Div>
+            
+            <textarea id="supervisor" name="day"  type="text" required></textarea>  <!--input field for the question asked -->
+            <DIV class="SEP"><!--same-->
+              <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                <i id="tup" class="fa fa-thumbs-o-up" aria-hidden="true">
+                  
+                </i> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i></b></p><!--question to user-->
+               <p class="counter">1 min</p><!--counter-->
+         </DIV>
+            <textarea id="supervisor" name="day"  type="text" required></textarea>  <!--input field for the question asked -->
+            <DIV class="SEP"><!--same-->
+              <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 
+                <i class="fa fa-thumbs-o-down" aria-hidden="true"></i></b></p><!--question to user-->
+               <p class="counter">1 min</p><!--counter-->
+         </DIV>
+            <textarea id="supervisor" name="day"  type="text" required></textarea>  <!--input field for the question asked -->
+            <DIV class="SEP"><!--same-->
+              <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-folder-open-o" aria-hidden="true">
+
+                </i><i   class="fa fa-thumbs-o-up" aria-hidden="true"></i> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i></b></p><!--question to user-->
+               <p class="counter">1 min</p><!--counter-->
+         </DIV>
+          </FORm>
+            </div>
+          </div>
  </body>   
+ 
 </html>
