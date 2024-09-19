@@ -48,6 +48,7 @@ textarea{
     justify-content: space-between;
     padding-left: 8px;
     font-size: 14px;
+    margin-top: 0%;
 }
 #day{
     border:none;
@@ -190,10 +191,12 @@ nav{
 
 }
 .SEP i{
-    border: 2px solid black;
+    border: 1px solid rgb(139, 135, 135);
     border-radius: 4px;
     padding: 2px 2px 2px 2px;
-    font-weight: bold;
+    font-weight: 200;
+    margin-right: 4px;
+    color: grey;
 }
 
 
@@ -216,21 +219,28 @@ a:hover::after{
     transform: scale(1);
 }
 
-#supervisor{
+.supervisor{
     margin-top: 30px;
     border:none;
     width: 490px;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 0px;
     padding-top: 0%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-left: 10px;
-    background-color:whitesmoke;
-    border-width: 1px;
+    background-color:white;
+    font-size: 14px;
+    opacity: 80%;
+   
     
 }
-.as{
-display:block;
+.supervisor:hover{
+    background-color: rgb(244 ,254, 244);
+    opacity: 100%;
+    
+}
+.supervisor p{
+padding: 10px 10px 10px 10px;
 
 }
 i{
@@ -266,6 +276,7 @@ i{
     width: 510px;
 }
 #tup{
-    background-color: blue;
-    width: max-content;
+    background-color: rgb(60, 60, 231);
+    
+    color: black;
 }
