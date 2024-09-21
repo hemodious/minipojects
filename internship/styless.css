@@ -102,7 +102,7 @@ textarea{
     border: none;
     border-radius: 8px;
     background-image: linear-gradient(to right, #1FA2FF 0%, #206ebd  51%, #1FA2FF  100%);
-
+    margin-top: 20px;
     border-width: 0.5px;
     width: 250px;
     height: 45px;
@@ -603,7 +603,8 @@ i{
         position: relative;
         left: 25px;
         width: 200px;
-        font-size: 15px;}
+        font-size: 15px;
+    }
 }
 @media  only screen and (max-width:660px){
     body{
@@ -635,7 +636,7 @@ i{
     .supervisor{
         margin-top: 0px;
         border:none;
-        width: 300px;
+        width: 400px;
         height: 150px;
         border-radius: 0px;
         padding-top: 0%;
@@ -698,7 +699,7 @@ i{
         display: flex;
         justify-content: space-between;
         box-shadow: 0.1px 0.1px 0.2px 0.5px rgb(238, 237, 237);
-        width: 320px;
+        width: 500px;
     }
     #SUBMIT{
         position: relative;
@@ -709,7 +710,7 @@ i{
         #back2{
             width: 500px;
             border: none;
-            height: 100vh;
+            height: 700px;
             padding-right:0;
           margin-left: 0;
           justify-content: center;
