@@ -68,6 +68,7 @@ textarea{
     padding-left: 0.5%;
     background-color:whitesmoke;
     border-width: 1px;
+    font-size: 15px;
 }
 .taskbox{
     width: 500px;
@@ -134,7 +135,7 @@ display: block;
     text-align: center;
     height: 35px;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 1p5x;
     margin-top: 10px;
     
 }
@@ -143,7 +144,7 @@ display: block;
     height:35px;
     border: none;
     background-color: whitesmoke;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 6px;
     margin-top: 10px;
     text-align: center;
