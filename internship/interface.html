@@ -2,55 +2,56 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styless.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
   <title>Document</title>
 </head>
+
 <body>
-  
+  <main class="main">
+    <div class="first-part">
+      <div id="">
+        <nav class="bar">
+          <h4>DAILY REVIEW</h4>
+        </nav>
+        <div class="form-wrapper">
 
-  <nav class="bar"><h4>DAILY REVIEW</h4></nav>
-  <nav >
-    <a href="#">supervisor</a>
-    <a href="#">results</a>
-    
-  </nav>
-   <div id="body">
-
-      <div id="back">
-         <form  id="form"> 
+          <form id="form">
             <!--heading -->
 
-            <DIV class="SEP"><!--container to help separate the input field from the counter-->
-                  <p><b> How did your day go?</b></p>
-                  <p class="counter">22/500</p><!--counter-->
-                    </DIV>
-                <textarea id="day" name="day"  type="text" required></textarea>  <!--input field for the question asked -->
+            <div class="SEP"><!--container to help separate the input field from the counter-->
+              <p><b> How did your day go?</b></p>
+              <p class="counter">22/500</p>
+            </div>
+            <textarea id="day" name="day" type="text" required></textarea> <!--input field for the question asked -->
 
             <DIV class="SEP"><!--same-->
-                  <p><b>Task performed </b></p><!--question to user-->
-                   <p class="counter">0/100</p><!--counter-->
-             </DIV>
-                      <input class="taskbox" id="task" name="task" type="text" required>  <!--input feild for the question asked-->
+              <p><b>Task performed </b></p><!--question to user-->
+              <p class="counter">0/100</p><!--counter-->
+            </DIV>
+            <input class="taskbox" id="task" name="task" type="text" required> <!--input feild for the question asked-->
 
-              <div class="SEP">
-                    <p><B>Task performed </B><!--question to user-->
-                     </p> <p class="counter">12/50</p><!--counter-->
-               </div> 
-                  <input class="taskbox" type="text" id="idbox"  required><br><br><!--input field for question-->
+            <div class="SEP">
+              <p><B>Task performed </B><!--question to user-->
+              </p>
+              <p class="counter">12/50</p><!--counter-->
+            </div>
+            <input class="taskbox" type="text" id="idbox" required><br><br><!--input field for question-->
 
-              
-                <div class="SEP">
-                  <div >
+
+            <div class="SEP">
+              <div>
                 <label for="time" class="taskbox1"><b>Hours spent on task </b></label><br><!--question to user-->
-                 <select id="time" name="time" required><!--list of options for user to select-->
+                <select id="time" name="time" required><!--list of options for user to select-->
                   <option>0</option>
                   <option>1</option>
                   <option>2</option>
@@ -60,73 +61,92 @@
                   <option>6</option>
                   <option>7</option>
                   <option>8</option>
-                 </select>
-                </div>
-              
-                 <div class="space2"><!--container to make spacing around the labels and input fileds easy-->
-                  <label><b>Date</b></label><br><!--instruction to user to user-->
-                  <input type="date" id="size" id="datetd" class="date" required><!--field for user to choose date he worked on the project-->
-                </div>
-
+                </select>
               </div>
-              
-              
-                 <br><br>
-                 <button id="SUBMIT" onclick="savetofile()"><i class="fa fa-plus" aria-hidden="true"></i> Create Contact   <!--submit button-->
-               </button> 
-           </form>
-           
-          </div>
-          
-          <div id="back2"><!--background of second part/form-->
-            <div class="remarks">
-              <Div class="SEPA">
-                
+
+              <div class="space2"><!--container to make spacing around the labels and input fileds easy-->
+                <label><b>Date</b></label><br><!--instruction to user to user-->
+                <input type="date" id="size" id="datetd" class="date"
+                  required><!--field for user to choose date he worked on the project-->
+              </div>
+
+            </div>
+
+
+            <br><br>
+            <button id="SUBMIT" onclick="savetofile()"><i class="fa fa-plus" aria-hidden="true"></i> Create Contact
+              <!--submit button-->
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="back2"><!--background of second part/form-->
+        <div class="remarks">
+          <Div class="SEPA">
+
             <nav><!--navigation bar of second form -->
               <a href="">supervisor</a>
               <a href="">results</a>
             </nav>
             <p class="counter"> clear</p><!--reset -->
-            </Div>
-            
-            <div class="supervisor" name="day" id="display" required><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam labore veritatis illum aliquam? Sit, illo. Praesentium alias possimus enim labore ratione quaerat delectus corporis, amet iusto aperiam blanditiis fugiat fuga.</p></div>  <!--displays info-->
-            <DIV class="SEP"><!--icons-->
-              <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
+          </Div>
+
+          <div class="supervisor" name="day" id="display" required>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam labore veritatis illum aliquam? Sit,
+              illo. Praesentium alias possimus enim labore ratione quaerat delectus corporis, amet iusto aperiam
+              blanditiis fugiat fuga.</p>
+          </div> <!--displays info-->
+          <DIV class="SEP"><!--icons-->
+            <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-folder-open-o" aria-hidden="true"></i>
                 <i id="tup" class="fa fa-thumbs-o-up" aria-hidden="true">
 
                 </i> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i></b></p><!--question to user-->
-               <p class="counter">1 min</p><!--timer-->
-         </DIV>
+            <p class="counter">1 min</p><!--timer-->
+          </DIV>
 
-            <div class="supervisor" name="day"  type="text" required><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque perferendis sint quam nesciunt molestias voluptates, quis officia ullam id est expedita? Molestias eveniet quia, recusandae consectetur obcaecati exercitationem a sunt?</p></div>  <!--displays info-->
-            <DIV class="SEP"><!--same-->
-              <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
+          <div class="supervisor" name="day" type="text" required>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque perferendis sint quam nesciunt molestias
+              voluptates, quis officia ullam id est expedita? Molestias eveniet quia, recusandae consectetur obcaecati
+              exercitationem a sunt?</p>
+          </div> <!--displays info-->
+          <DIV class="SEP"><!--same-->
+            <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                 <i class="fa fa-thumbs-o-down" aria-hidden="true"></i></b></p><!--question to user-->
-               <p class="counter">1 min</p><!--timer-->
-         </DIV>
-            <div class="supervisor" name="day"  type="text" required><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis culpa eligendi voluptatum numquam illum at mollitia autem architecto rerum deserunt labore, magni nobis, maxime distinctio qui ab necessitatibus modi soluta!</p></div>  <!--displays info -->
-            <DIV class="SEP"><!--same-->
-              <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
+            <p class="counter">1 min</p><!--timer-->
+          </DIV>
+          <div class="supervisor" name="day" type="text" required>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis culpa eligendi voluptatum numquam
+              illum at mollitia autem architecto rerum deserunt labore, magni nobis, maxime distinctio qui ab
+              necessitatibus modi soluta!</p>
+          </div> <!--displays info -->
+          <DIV class="SEP"><!--same-->
+            <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-folder-open-o" aria-hidden="true">
 
-                </i><i   class="fa fa-thumbs-o-up" aria-hidden="true"></i> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i></b></p><!--question to user-->
-               <p class="counter">1 min</p><!--timer-->
-               
+                </i><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <i class="fa fa-thumbs-o-down"
+                  aria-hidden="true"></i></b></p><!--question to user-->
+            <p class="counter">1 min</p><!--timer-->
 
-         </DIV>
+
+          </DIV>
         </div>
-            </div>
-          </div> 
+      </div>
+    </div>
+  </main>
 
-          <script src="script.js">
-    
-          </script>
-        
+
+  <script src="script.js">
+
+  </script>
+
 </body>
+
 </html>
