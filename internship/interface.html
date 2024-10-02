@@ -45,7 +45,7 @@
               </p>
               <p class="counter">12/50</p><!--counter-->
             </div>
-            <input class="taskbox" type="text" id="idbox" required><br><br><!--input field for question-->
+            <input class="taskbox"  name="other" type="text" id="idbox" required><br><br><!--input field for question-->
 
 
             <div class="SEP">
@@ -66,17 +66,17 @@
 
               <div class="space2"><!--container to make spacing around the labels and input fileds easy-->
                 <label><b>Date</b></label><br><!--instruction to user to user-->
-                <input type="date" id="size" id="datetd" class="date"
+                <input type="date" id="size" id="datetd" class="date" name="date"
                   required><!--field for user to choose date he worked on the project-->
               </div>
 
             </div>
 
 
-            <br><br>
-            <button id="SUBMIT" onclick="savetofile()"><i class="fa fa-plus" aria-hidden="true"></i> Create Contact
+        <button id="SUBMIT" onclick="savetofile()"><i class="fa fa-plus" aria-hidden="true"></i> Create Contact
               <!--submit button-->
             </button>
+            
           </form>
         </div>
       </div>
@@ -98,11 +98,11 @@
               illo. Praesentium alias possimus enim labore ratione quaerat delectus corporis, amet iusto aperiam
               blanditiis fugiat fuga.</p>
           </div> <!--displays info-->
-          <DIV class="SEP"><!--icons-->
+          <DIV class="SEP1"><!--icons-->
             <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-folder-open-o" aria-hidden="true"></i>
-                <i id="tup" class="fa fa-thumbs-o-up" aria-hidden="true">
+                <i  class="fa fa-thumbs-o-up" aria-hidden="true">
 
                 </i> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i></b></p><!--question to user-->
             <p class="counter">1 min</p><!--timer-->
@@ -113,7 +113,7 @@
               voluptates, quis officia ullam id est expedita? Molestias eveniet quia, recusandae consectetur obcaecati
               exercitationem a sunt?</p>
           </div> <!--displays info-->
-          <DIV class="SEP"><!--same-->
+          <DIV class="SEP1"><!--same-->
             <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-folder-open-o" aria-hidden="true"></i>
@@ -126,7 +126,7 @@
               illum at mollitia autem architecto rerum deserunt labore, magni nobis, maxime distinctio qui ab
               necessitatibus modi soluta!</p>
           </div> <!--displays info -->
-          <DIV class="SEP"><!--same-->
+          <DIV class="SEP1"><!--same-->
             <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
                 <i class="fa fa-folder-open-o" aria-hidden="true">
@@ -144,6 +144,7 @@
 
 
   <script src="script.js">
+    
 
   </script>
 

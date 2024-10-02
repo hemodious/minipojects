@@ -75,7 +75,7 @@ textarea {
     width: 500px;
     height: 100px;
     border-radius: 8px;
-    padding-top: 0%;
+    padding-top: 2%;
     padding-left: 2%;
     border-width: 1px;
     font-size: 15px;
@@ -89,6 +89,7 @@ textarea {
     border-width: 1px;
     text-align: left;
     font-size: 15px;
+    padding: 2% 2%;
 }
 
 .drop {
@@ -218,17 +219,23 @@ nav {
 
 }
 
-.SEP i {
+
+.SEP1{
+    display:flex ;
+    justify-content: space-between;
+    margin-left: 4%;
+    margin-top: 0;
+}
+.SEP1 i{
     border: 1px solid rgb(139, 135, 135);
     border-radius: 4px;
     padding: 2px 2px 2px 2px;
     font-weight: 200;
     margin-right: 4px;
     color: grey;
+    padding-left: 2px;
+    padding:5px 5px;
 }
-
-
-
 a::after {
     content: "";
     background-color: #1FA2FF;
@@ -315,11 +322,7 @@ i {
     padding: 10px 5px 5px 5px;
 }
 
-#tup {
-    background-color: rgb(60, 60, 231);
 
-    color: black;
-}
 
 .remarks {
     height: 100vh;
