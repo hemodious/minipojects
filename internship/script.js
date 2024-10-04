@@ -84,22 +84,21 @@ fetch(
 });
 
 
-
 fetch('https://v1.nocodeapi.com/hemodious/google_sheets/nvtsDRABpmVwwcQk?tabId=Sheet1')
   .then(response => response.json())
   .then(({ data }) => {
-    var output = "<table>";
-    output += "<tr><th>Day</th><th>Task</th><th>Other</th><th>Time</th><th>Date</th></tr>";
+    var divIds = ["display", "display1", "display2"];
     data.forEach((row, index) => {
-      output += "<tr>";
-      output += "<td>" + row.day + "</td>";
-      output += "<td>" + row.task + "</td>";
-      output += "<td>" + row.other + "</td>";
-      output += "<td>" + row.time + "</td>";
-      output += "<td>" + row.date + "</td>";
-      output += "</tr>";
+      var divId = divIds[index % divIds.length];
+      var output = "";
+      output += "Day: " + row.day + ", ";
+      output += "Task: " + row.task + ", ";
+      output += "Other: " + row.other + ", ";
+      output += "Time: " + row.time + ", ";
+      output += "Date: " + row.date;
+      document.getElementById(divId).innerHTML = output;
     });
-    output += "</table>";
-    document.getElementById("display").innerHTML = output;
   });
+
+
 });
