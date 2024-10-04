@@ -88,8 +88,9 @@ fetch('https://v1.nocodeapi.com/hemodious/google_sheets/nvtsDRABpmVwwcQk?tabId=S
   .then(response => response.json())
   .then(({ data }) => {
     var divIds = ["display", "display1", "display2"];
-    data.forEach((row, index) => {
-      var divId = divIds[index % divIds.length];
+    var lastThreeRows = data.slice(-3); // get the last 3 rows
+    lastThreeRows.forEach((row, index) => {
+      var divId = divIds[index];
       var output = "";
       output += "Day: " + row.day + ", ";
       output += "Task: " + row.task + ", ";
@@ -98,7 +99,6 @@ fetch('https://v1.nocodeapi.com/hemodious/google_sheets/nvtsDRABpmVwwcQk?tabId=S
       output += "Date: " + row.date;
       document.getElementById(divId).innerHTML = output;
     });
-  });
-
+  })
 
 });
