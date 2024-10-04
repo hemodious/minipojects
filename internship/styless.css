@@ -259,7 +259,7 @@ a:hover::after {
     margin-top: 10px;
     border: none;
     width: 490px;
-    height: 130px;
+    height: 90px;
     border-radius: 0px;
     padding-top: 4%;
     margin-bottom: 0px;
@@ -353,4 +353,8 @@ i {
     background-color: white;
     padding: 24px;
 
+}
+#display{
+    overflow: scroll;
+    height: 200px;
 }
