@@ -354,3 +354,329 @@ i {
     padding: 24px;
 
 }
+@media (max-width:1180px){
+    #form{
+        width: 450px;
+    }
+    
+
+    #day{
+        width: 400px;
+
+    }
+    .taskbox{
+        width: 400px;
+    }
+
+    .supervisor{
+        width: 350px;
+        font-size: 12px;
+    }
+    #back2{
+        width: 400px;
+    }
+    .SEPA{
+        width: 300px;
+    }
+    #SUBMIT{
+        width: 140px;
+        position: relative;
+        left: 155px;
+    }
+    #time{
+        width: 200px;
+
+    }
+    .date{
+        width:200px;
+        margin-left: 0px;
+    }
+    .SEP{
+        width: 420px;
+    }
+   
+
+
+}
+
+@media(max-width:940px){
+    #form{
+        width: 350px;
+    }
+   
+
+    #day{
+        width: 300px;
+
+    }
+    .taskbox{
+        width: 300px;
+    }
+
+    .supervisor{
+        width: 350px;
+        font-size: 12px;
+    }
+    #back2{
+        width: 400px;
+    }
+    .SEPA{
+        width: 300px;
+    }
+    #SUBMIT{
+        width: 140px;
+        position: relative;
+        left: 105px;
+    }
+    #time{
+        width: 130px;
+
+    }
+    .date{
+        width:140px;
+        margin-left: 0px;
+    }
+
+   
+
+    .SEP{
+        width: 310px;
+    }
+
+
+
+
+
+}
+@media(max-width:840px){
+    #form{
+        width: 300px;
+    }
+   
+
+    #day{
+        width: 280px;
+
+    }
+    .taskbox{
+        width: 280px;
+    }
+
+    .supervisor{
+        width: 300px;
+        font-size: 12px;
+    }
+    #back2{
+        width: 350px;
+    }
+    
+    #SUBMIT{
+        width: 140px;
+        position: relative;
+        left: 85px;
+    }
+    #time{
+        width: 130px;
+
+    }
+    .date{
+        width:140px;
+        margin-left: 0px;
+    }
+
+   
+
+    .SEP{
+        width: 300px;
+    }
+
+
+
+
+
+}
+@media(max-width:740px){
+    #form :is(textarea,input){
+        font-size: 13px;
+    }
+    #form{
+        width: 250px;
+    }
+   
+
+    #day{
+        width: 230px;
+
+    }
+    .taskbox{
+        width: 230px;
+    }
+
+    .supervisor{
+        width: 300px;
+        font-size: 12px;
+    }
+    #back2{
+        width: 330px;
+    }
+    
+    #SUBMIT{
+        width: 140px;
+        position: relative;
+        left: 60px;
+    }
+    #time{
+        width: 120px;
+
+    }
+    .date{
+        width:123px;
+        margin-left: 0px;
+    }
+
+   
+
+    .SEP{
+        width: 250px;
+    }
+
+
+
+
+
+}
+@media(max-width:680px){
+   .main{
+    display: block;
+   }
+#form{
+    width: 400px;
+}
+#SUBMIT{
+    width: 140px;
+    position: relative;
+    left: 125px;
+}
+.review-wrapper{
+    align-items: center;
+    display: flex;justify-content: center;
+    background-image: linear-gradient(to bottom, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    padding-top: 40px;
+    width: 100%;
+}
+#back2{
+    width: 400px;
+    padding: 22px;
+}
+.supervisor{
+    width: 400px;
+}
+#time{
+    width: 180px;
+
+}
+#day{
+    width: 380px;
+
+}
+.taskbox{
+    width: 380px;
+}
+
+.date{
+    width:200px;
+    margin-left: 0px;
+}
+.SEP{
+    width: 400px;
+}
+.supervisor:is(p){
+    font-size: 14px;
+}
+}
+
+@media(max-width:480px){
+  
+ #form{
+     width: 300px;
+ }
+ #SUBMIT{
+     width: 140px;
+     position: relative;
+     left: 85px;
+ }
+ 
+ #back2{
+     width: 300px;
+     padding: 22px;
+ }
+ .supervisor{
+     width: 300px;
+ }
+ #time{
+     width: 150px;
+ 
+ }
+ #day{
+     width: 280px;
+ 
+ }
+ .taskbox{
+     width: 280px;
+ }
+ 
+ .date{
+     width:130px;
+     margin-left: 0px;
+ }
+ .SEP{
+     width: 300px;
+ }
+ 
+ }
+ @media(max-width:380px){
+  
+    #form{
+        width: 200px;
+    }
+    #SUBMIT{
+        width: 140px;
+        position: relative;
+        left: 25px;
+    }
+    
+    #back2{
+        width: 200px;
+        padding: 22px;
+    }
+    .supervisor{
+        width: 200px;
+    }
+    #time{
+        width: 70px;
+    
+    }
+    #day{
+        width: 180px;
+    
+    }
+    .taskbox{
+        width: 180px;
+    }
+    
+    .date{
+        width:100px;
+        margin-left: 0px;
+    }
+    .SEP{
+        width: 190px;
+    }
+    .SEPA{
+        width: 100;
+        font-size: small;
+    }
+    
+    .remarks{
+        width: 200px;
+    }
+    }
