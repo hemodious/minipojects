@@ -8,7 +8,7 @@ body {
 }
 
 #body {
-    display: flex;
+    display: block;  
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -20,7 +20,12 @@ body {
     font-family: "Nunito", sans-serif;
     margin-left: 0;
 }
-
+.don_print{
+    display: hidden;
+}
+.print{
+    display: block;
+}
 textarea {
     resize: none;
 }
@@ -266,7 +271,7 @@ a:hover::after {
     margin-left: 10px;
     background-color: white;
     font-size: 15px;
-    opacity: 80%;
+    opacity: 100%;
     font-weight: 500;
 
 }
@@ -464,7 +469,7 @@ i {
 
     .supervisor{
         width: 300px;
-        font-size: 12px;
+        font-size: 15px;
     }
     #back2{
         width: 350px;
@@ -497,7 +502,7 @@ i {
 }
 @media(max-width:740px){
     #form :is(textarea,input){
-        font-size: 13px;
+        font-size: 15px;
     }
     #form{
         width: 250px;
@@ -570,6 +575,7 @@ i {
 }
 .supervisor{
     width: 400px;
+    font-size: large;
 }
 #time{
     width: 180px;
@@ -609,6 +615,7 @@ i {
  #back2{
      width: 300px;
      padding: 22px;
+     
  }
  .supervisor{
      width: 300px;
@@ -678,5 +685,8 @@ i {
     
     .remarks{
         width: 200px;
+        
     }
     }
+    
+    

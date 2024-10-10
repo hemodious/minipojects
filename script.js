@@ -102,3 +102,62 @@ fetch('https://v1.nocodeapi.com/hemodious/google_sheets/nvtsDRABpmVwwcQk?tabId=S
   })
 
 });
+
+function generatePdf() {
+  var change=document.getElementById("first-part");
+  var change2=document.getElementById("display");
+  var change3=document.getElementById("display1");
+  var change4=document.getElementById("mini-header");
+  var change5=document.getElementById("icon1");
+  var change6=document.getElementById("icon2");
+  var change7=document.getElementById("icon3");
+
+  change.classList.add("don_print");
+ // change1.classList.add("don_print");
+  change2.classList.add("don_print");
+  change3.classList.add("don_print");
+  change4.classList.add("don_print");
+  change5.classList.add("don_print");
+  change6.classList.add("don_print");
+  change7.classList.add("don_print");
+  window.print();
+}
+function generatePdf2() {
+  var change=document.getElementById("first-part");
+  var change2=document.getElementById("display2");
+  var change3=document.getElementById("display1");
+  var change4=document.getElementById("mini-header");
+  var change5=document.getElementById("icon1");
+  var change6=document.getElementById("icon2");
+  var change7=document.getElementById("icon3");
+
+  change.classList.add("don_print");
+ // change1.classList.add("don_print");
+  change2.classList.add("don_print");
+  change3.classList.add("don_print");
+  change4.classList.add("don_print");
+  change5.classList.add("don_print");
+  change6.classList.add("don_print");
+  change7.classList.add("don_print");
+  window.print();
+}
+function generatePdf1() {
+  var change=document.getElementById("first-part");
+  var change2=document.getElementById("display");
+  var change3=document.getElementById("display2");
+  var change4=document.getElementById("mini-header");
+  var change5=document.getElementById("icon1");
+  var change6=document.getElementById("icon2");
+  var change7=document.getElementById("icon3");
+
+  change.classList.add("don_print");
+ // change1.classList.add("don_print");
+  change2.classList.add("don_print");
+  change3.classList.add("don_print");
+  change4.classList.add("don_print");
+  change5.classList.add("don_print");
+  change6.classList.add("don_print");
+  change7.classList.add("don_print");
+  window.print();
+  document.reset();
+}

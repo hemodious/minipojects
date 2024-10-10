@@ -5,14 +5,17 @@
 
 <head>
   <meta charset="UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styless.css">
+  <link rel="stylesheet" media="print" href="print.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
+    <script src="js/jsPDF/dist/jspdf.umd.js"></script>
+
   <title>
     
     PROGRESS TRACKER
@@ -25,9 +28,9 @@
 
 <body>
   <main class="main">
-    <div class="first-part">
+    <div class="first-part"  id="first-part">
       <div id="">
-        <nav class="bar">
+        <nav class="bar" >
           <h4>DAILY REVIEW</h4>
         </nav>
         <div class="form-wrapper">
@@ -88,10 +91,10 @@
         </div>
       </div>
     </div>
-    <div class="review-wrapper">
+    <div class="review-wrapper" id="review-wrapper">
       <div id="back2"><!--background of second part/form-->
         <div class="remarks">
-          <Div class="SEPA">
+          <Div class="SEPA" id="mini-header">
 
             <nav><!--navigation bar of second form -->
               <a href="">supervisor</a>
@@ -100,14 +103,14 @@
             <p class="counter"> clear</p><!--reset -->
           </Div>
 
-          <div class="supervisor" name="day" id="display" required>
+          <div class="supervisor" name="day" id="display"  required>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam labore veritatis illum aliquam? Sit,
               illo. Praesentium alias possimus enim labore ratione quaerat delectus corporis, amet iusto aperiam
               blanditiis fugiat fuga.</p>
           </div> <!--displays info-->
-          <DIV class="SEP1"><!--icons-->
+          <DIV class="SEP1" id="icon1"><!--icons-->
             <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-download" aria-hidden="true" onclick="generatePdf2()"></i>
                 <i class="fa fa-folder-open-o" aria-hidden="true"></i>
                 <i  class="fa fa-thumbs-o-up" aria-hidden="true">
 
@@ -115,28 +118,28 @@
             <p class="counter">1 min</p><!--timer-->
           </DIV>
 
-          <div class="supervisor" name="day" type="text" id ="display1" required>
+          <div class="supervisor" name="day" type="text" id ="display1"  required>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque perferendis sint quam nesciunt molestias
               voluptates, quis officia ullam id est expedita? Molestias eveniet quia, recusandae consectetur obcaecati
               exercitationem a sunt?</p>
           </div> <!--displays info-->
-          <DIV class="SEP1"><!--same-->
+          <DIV class="SEP1" id="icon2"><!--same-->
             <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-download" aria-hidden="true" onclick="generatePdf1()"></i>
                 <i class="fa fa-folder-open-o" aria-hidden="true"></i>
                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
                 <i class="fa fa-thumbs-o-down" aria-hidden="true"></i></b></p><!--question to user-->
             <p class="counter">1 min</p><!--timer-->
           </DIV>
-          <div class="supervisor" name="day" type="text"id="display2" required>
+          <div class="supervisor" name="day" type="text"id="display2"  required>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis culpa eligendi voluptatum numquam
               illum at mollitia autem architecto rerum deserunt labore, magni nobis, maxime distinctio qui ab
               necessitatibus modi soluta!</p>
           </div> <!--displays info -->
-          <DIV class="SEP1"><!--same-->
+          <DIV class="SEP1" id="icon3"><!--same-->
             <p><b><i class="fa fa-clone" aria-hidden="true"> </i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-download" aria-hidden="true" onclick="generatePdf()" ></i>
                 <i class="fa fa-folder-open-o" aria-hidden="true">
 
                 </i><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <i class="fa fa-thumbs-o-down"
@@ -149,8 +152,7 @@
       </div>
     </div>
   </main>
-
-
+  
   <script src="script.js">
     
 
